@@ -29,19 +29,43 @@ body {
 .card {
   background-color: var(--White);
   display: flex;
+  gap: 1rem;
   flex-direction: column;
   max-width: 20rem;
   padding: 1rem;
   border-radius: 15px;
   border: 2px solid;
   -webkit-box-shadow: 14px 19px 15px 4px #000000;
-  box-shadow: 14px 19px 15px 4px #000000;
+  box-shadow: 12px 12px 0 4px #000000;
+}
+.card h1 {
+  font-weight: var(--fw-large);
+  &:hover {
+    color: var(--Yellow);
+    cursor: pointer;
+  }
+
+}
+.card p {
+  color: var(--Gray-500);
 }
 .author img {
   width: 15%;
+}
+.card img {
+  border-radius: 15px;
 }
 .author {
   display: flex;
   gap: 1rem;
   align-items: center;
+  font-weight: var(--fw-large);
+}
+.btn {
+  background: var(--Yellow);
+  width: min-content;
+  border: none;
+  border-radius: 10px;
+  font-weight: var(--fw-large);
+  padding: .5rem 1rem;
 }
